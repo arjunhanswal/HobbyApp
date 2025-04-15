@@ -15,6 +15,8 @@
 		6B12DED92DACC734001F36AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B12DED82DACC734001F36AD /* Preview Assets.xcassets */; };
 		6B12DEDC2DACC734001F36AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B12DEDA2DACC734001F36AD /* LaunchScreen.storyboard */; };
 		6B12DEE72DACC735001F36AD /* HobbyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12DEE62DACC735001F36AD /* HobbyAppTests.swift */; };
+		6B12DEFC2DAE1719001F36AD /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B12DEFB2DAE1719001F36AD /* Color.xcassets */; };
+		6B12DEFE2DAE1753001F36AD /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B12DEFD2DAE1753001F36AD /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		6B12DEE22DACC735001F36AD /* HobbyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HobbyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B12DEE62DACC735001F36AD /* HobbyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyAppTests.swift; sourceTree = "<group>"; };
 		6B12DEE82DACC735001F36AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B12DEFB2DAE1719001F36AD /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		6B12DEFD2DAE1753001F36AD /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +85,13 @@
 		6B12DECB2DACC733001F36AD /* HobbyApp */ = {
 			isa = PBXGroup;
 			children = (
-				6B12DECC2DACC733001F36AD /* AppDelegate.swift */,
-				6B12DECE2DACC733001F36AD /* SceneDelegate.swift */,
-				6B12DED32DACC733001F36AD /* ContentView.swift */,
-				6B12DED52DACC734001F36AD /* Assets.xcassets */,
+				6B12DEF12DAE1658001F36AD /* App delegate */,
+				6B12DEFA2DAE16CC001F36AD /* Service */,
+				6B12DEF52DAE1681001F36AD /* Utility */,
+				6B12DEF42DAE1675001F36AD /* View Model */,
+				6B12DEF32DAE1670001F36AD /* Model */,
+				6B12DEF22DAE1667001F36AD /* View */,
+				6B12DEF92DAE16BF001F36AD /* Resource */,
 				6B12DEDA2DACC734001F36AD /* LaunchScreen.storyboard */,
 				6B12DEDD2DACC734001F36AD /* Info.plist */,
 				6B12DED02DACC733001F36AD /* HobbyApp.xcdatamodeld */,
@@ -108,6 +115,85 @@
 				6B12DEE82DACC735001F36AD /* Info.plist */,
 			);
 			path = HobbyAppTests;
+			sourceTree = "<group>";
+		};
+		6B12DEF12DAE1658001F36AD /* App delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6B12DECC2DACC733001F36AD /* AppDelegate.swift */,
+				6B12DECE2DACC733001F36AD /* SceneDelegate.swift */,
+			);
+			path = "App delegate";
+			sourceTree = "<group>";
+		};
+		6B12DEF22DAE1667001F36AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B12DED32DACC733001F36AD /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B12DEF32DAE1670001F36AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B12DEF42DAE1675001F36AD /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		6B12DEF52DAE1681001F36AD /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6B12DEF82DAE16A4001F36AD /* Extension */,
+				6B12DEF72DAE169C001F36AD /* Constant */,
+				6B12DEF62DAE1693001F36AD /* Theme */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		6B12DEF62DAE1693001F36AD /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				6B12DEFD2DAE1753001F36AD /* Color+Extension.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		6B12DEF72DAE169C001F36AD /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		6B12DEF82DAE16A4001F36AD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6B12DEF92DAE16BF001F36AD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6B12DED52DACC734001F36AD /* Assets.xcassets */,
+				6B12DEFB2DAE1719001F36AD /* Color.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		6B12DEFA2DAE16CC001F36AD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B12DEDC2DACC734001F36AD /* LaunchScreen.storyboard in Resources */,
+				6B12DEFC2DAE1719001F36AD /* Color.xcassets in Resources */,
 				6B12DED92DACC734001F36AD /* Preview Assets.xcassets in Resources */,
 				6B12DED62DACC734001F36AD /* Assets.xcassets in Resources */,
 			);
@@ -212,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B12DED22DACC733001F36AD /* HobbyApp.xcdatamodeld in Sources */,
+				6B12DEFE2DAE1753001F36AD /* Color+Extension.swift in Sources */,
 				6B12DECD2DACC733001F36AD /* AppDelegate.swift in Sources */,
 				6B12DED42DACC733001F36AD /* ContentView.swift in Sources */,
 				6B12DECF2DACC733001F36AD /* SceneDelegate.swift in Sources */,
